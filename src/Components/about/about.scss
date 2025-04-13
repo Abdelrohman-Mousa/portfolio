@@ -1,0 +1,87 @@
+.about { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 
+    70px;
+
+    .about-title {
+        h1 {
+            padding: 0px 30px;
+            font-size: 80px;
+            font-weight: 600;
+            color: #fff;
+        }
+    }
+
+    .about-sections {
+        display: flex;
+        gap: 50px;
+
+        .about-left {
+            width: 30%;
+            min-width: 25%;
+            max-height: 25%;
+           
+            img {
+                width: 100%;
+                height: 90%;
+                border-radius: 15px;
+                object-fit: cover;
+                // mask: linear-gradient(to bottom,#000000, transparent);
+            }
+        }
+
+        .about-right {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .about-para {
+                display: flex;
+                flex-direction: column;
+                gap: 0px;
+                
+                p {
+                   font-size: 18px;
+                   font-weight: 500;
+                   color: #ccc;
+                }
+                .para {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #ccc;
+                }
+            }
+            
+            .about-skills {
+                width: 100%;
+
+               .about-skill {
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center; 
+                gap: 10px;
+                p {
+                    min-width: 100px;
+                    color: #ccc;
+                    margin: 0 0 5px;
+                    font-weight: bold;
+                    margin-right: 20px;
+                }
+                .skill-bar {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 8px;
+                    background: linear-gradient(to right, #3A2E65, #5E4B8B, #A77DFF);
+                    border-radius: 4px;
+                    transition: width 0.5s ease-in-out;
+                }
+               }
+            }
+        }
+    }
+}
+

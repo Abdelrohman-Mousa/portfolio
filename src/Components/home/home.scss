@@ -1,0 +1,88 @@
+.home {
+    margin: 0px 60px;
+    height: 80vh;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .info {
+       flex: 1;
+       color: #fff;
+       margin-left: 20px;
+       margin-top: -50px;
+       
+       h1 {
+        margin-left: -25px;
+        font-weight: 200;
+        color: #b9bfb8;
+
+       }
+       .name {
+         font-size: 50px;
+         font-weight: bold;
+       }
+
+       h3 {
+        color: #b9bfb8;
+       }
+
+       .social {
+         img {
+            width: 25px;
+            background-color: #fff;
+            border-radius: 15%;
+            padding: 4px;
+            margin: 6px;
+            transition: 0.2s;
+
+            &:hover {
+                box-shadow: 3px 0px 20px rgba($color: #8585A7, $alpha: 1.0);
+            }
+         }
+       }
+
+    }
+    .personalImg {
+       flex: 1;
+       width: 100%;
+
+       img {
+        width: 75%;
+        height: 50%;
+        image-rendering: crisp-edges;
+       }
+    }
+    .down {
+      width: 40px;
+      position: absolute;
+      bottom: 50px;
+      right: 50%;
+      animation: dropDown 2s infinite;
+    }
+    .down2 {
+     
+      animation-delay: 0.3s; // تأخير لبدء الحركة بعد السهم الأول
+    }
+    .down3 {
+     
+      animation-delay: 0.5s; // تأخير أطول لبدء الحركة بعد الثاني
+    }
+}
+
+
+@keyframes dropDown {
+   0% {
+     transform: translateY(0);
+     opacity: 1;
+   }
+   // 50% {
+   //   transform: translateY(20px);
+   //   opacity: 0.5;
+   // }
+   100% {
+     transform: translateY(60px);
+     opacity: 0;
+   }
+ }

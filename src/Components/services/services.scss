@@ -1,0 +1,88 @@
+.services {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+
+    .sSection {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .sTitle {
+            font-size: 88px;
+            margin-bottom: 24px;
+            margin-left: 40px;
+            color: #fff;
+           
+        }
+
+        .serviceList {
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+
+          .service {
+            width: 55%;
+            padding: 15px 30px 0 30px;
+            border-radius: 20px;
+            background-color: #2f213f;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            cursor: pointer;
+            margin-left: 40px;
+
+            .serviceIcon {
+                width: 48px;
+                height: 48px;
+                border-radius: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .serviceIcon img {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+                .serviceInfo h2 {
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-bottom: 8px;
+                    
+
+                }
+                .serviceInfo h3 {
+                    font-size: 13px;
+                    font-weight: 300;
+                    color: #C9A6FF ;
+                }
+          }
+        }
+        .counterList {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 40px;
+        .counter {
+            display: flex;
+            flex-direction: column;
+            letter-spacing: 1px;
+            align-items: center;
+            h1 {
+                font-size: 48px;
+                color: #fff;
+            }
+
+            p {
+              font-size: 17px;
+              margin-top: -20px;
+              color: #fff;
+            }
+        }
+    }
+    }
+}
