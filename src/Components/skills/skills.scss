@@ -1,3 +1,5 @@
+@use "../../App.scss" as *;
+
 .skills {
     width: 100%;
 
@@ -5,6 +7,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 2rem;
 
         h1 {
            color: #fff;
@@ -16,8 +19,20 @@
     .cards {
        display: grid;
        grid-template-columns: repeat(9, 1fr);
-       gap: 20px;
+       gap: 25px;
        padding: 0 60px 0;
+
+       @include mobile {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0;
+        gap: 17px;
+    }
+
+     @include tablet {
+        grid-template-columns: repeat(6, 1fr);
+        padding: 0;
+        gap: 17px;
+    }
     }
 
     .box {
@@ -34,15 +49,16 @@
        }
 
         img {
-          width: 50px;
+          width: 70px;
           background-color: #fff;
           border-radius: 10px;
           padding: 10px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 
         }
         h4 {
             color: #fff;
+            margin-top: 10px;
         }
     }
     

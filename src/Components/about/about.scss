@@ -1,28 +1,63 @@
+@use "../../App.scss" as *;
+
 .about { 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0px 
-    70px;
+    margin: 2.3rem 2.2rem;
+    @include mobile {
+        width: 86%;
+        display: flex;
+        flex-direction: column;
+    }
+
+     @include tablet {
+        width: 86%;
+        display: flex;
+        flex-direction: column;
+    }
 
     .about-title {
         h1 {
-            padding: 0px 30px;
+            padding: 2rem 30px;
             font-size: 80px;
             font-weight: 600;
             color: #fff;
+
+            @include mobile {
+                font-size: 60px;
+                width: 111%;
+                margin-right: 40px;
+                
+            }
         }
     }
 
     .about-sections {
         display: flex;
         gap: 50px;
+        @include mobile {
+            flex-direction: column-reverse;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+         @include tablet {
+            flex-direction: column-reverse;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
 
         .about-left {
             width: 30%;
             min-width: 25%;
             max-height: 25%;
+            @include mobile {
+                width: 90%;
+            }
            
             img {
                 width: 100%;
@@ -30,6 +65,10 @@
                 border-radius: 15px;
                 object-fit: cover;
                 // mask: linear-gradient(to bottom,#000000, transparent);
+
+                 @include tablet {
+                   width: 150%;
+                 }
             }
         }
 
@@ -41,17 +80,23 @@
             .about-para {
                 display: flex;
                 flex-direction: column;
-                gap: 0px;
+                gap: 1.5rem;
                 
                 p {
                    font-size: 18px;
                    font-weight: 500;
                    color: #ccc;
+                   @include mobile {
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+                   
                 }
                 .para {
                     font-size: 16px;
                     font-weight: 500;
                     color: #ccc;
+                    margin-bottom: 1rem;
                 }
             }
             

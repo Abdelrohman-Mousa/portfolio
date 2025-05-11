@@ -57,11 +57,12 @@ const Home = () => {
          > Welcome to my profile.
          </motion.h1>
          <motion.div
+           className='detail'
            variants={listVariants}
            animate={isInView ? "animate" : "initial" }
          >
          <h2 className='name'> I'm Abdelrhman Marei</h2>
-         <h2 style={{fontSize:"35px"}}>
+         <h2 className='position'>
           a <span>{text}</span>
            <Cursor 
               cursorBlinking="false"
@@ -69,7 +70,7 @@ const Home = () => {
               cursorColor='#58b1ff'
            />
          </h2>
-         <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime aut officiis magnam dolore</h3>
+         <h3>Hi, I’m Abdulrahman _ a tech enthusiast who loves turning ideas into smart, user-focused digital solutions. I learn fast, adapt quickly, and enjoy the challenge of continuous growth.</h3>
          </motion.div>
          <motion.div
            variants={listVariants}
@@ -82,10 +83,11 @@ const Home = () => {
            <a href='https://wa.me/201126478733?text=مرحبًا، انا عبدالرحمن يمكننا التواصل خاص علي هذا الرقم' target='blank'><img src="./whatsapp.png" alt="" /></a>
            <a href='https://t.me/AbdelrhmanMarei?start=Hello' target='blank'><img src="./telegram.png" alt="" /></a>
            <a href='https://github.com/Abdelrohman-Mousa' target='blank'><img src="./github.png" alt="" /></a>
+           <a href="mailto:abdelrohmanmarey@gmail.com?subject=Hello&body=I would like to connect" target="blank"><img src="./email.png" alt="Email" /></a>
          </motion.div>
       </div>
       <div className='personalImg'>
-         <img src="./mareiImg.png" alt="" />
+         <img src="./ME1.png" alt="" />
       </div>
       <img className='down' src='./arrow-down.png'/>
       <img className='down down2' src='./arrow-down.png'/>

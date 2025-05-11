@@ -1,7 +1,17 @@
+@use "../../App.scss" as *;
+
 .services {
     height: 100vh;
     overflow: hidden;
     display: flex;
+
+    @include mobile {
+        width: 100%;
+    }
+
+    @include tablet {
+        width: 125%;
+    }
 
     .sSection {
         width: 50%;
@@ -14,25 +24,41 @@
             margin-bottom: 24px;
             margin-left: 40px;
             color: #fff;
+            @include mobile {
+             width: 177%;
+             font-size: 60px;
+            margin-left: 20px;
+            }
            
         }
 
         .serviceList {
           display: flex;
           flex-direction: column;
-          gap: 14px;
+          gap: 1rem;
+          margin-bottom: 1.5rem;
 
           .service {
-            width: 55%;
-            padding: 15px 30px 0 30px;
+            width: 60%;
+            padding: 1rem 1.5rem;
             border-radius: 20px;
             background-color: #2f213f;
             color: #fff;
             display: flex;
             align-items: center;
-            gap: 14px;
+            gap: 1rem;
             cursor: pointer;
             margin-left: 40px;
+            
+            @include mobile  {
+                width: 166%;
+                margin-left: 20px;
+            }
+
+            @include tablet  {
+               width: 120%;
+               margin-left: 30px;
+            }
 
             .serviceIcon {
                 width: 48px;
@@ -51,6 +77,10 @@
                     font-size: 18px;
                     font-weight: 500;
                     margin-bottom: 8px;
+
+                    @include tablet  {
+                       font-size: 30px;
+                    }    
                     
 
                 }
@@ -58,15 +88,29 @@
                     font-size: 13px;
                     font-weight: 300;
                     color: #C9A6FF ;
+
+                     @include tablet  {
+                       font-size: 20px;
+                    }   
                 }
           }
         }
         .counterList {
-            width: 50%;
+            width: 55%;
             display: flex;
             align-items: center;
             justify-content: space-between;
             margin-left: 40px;
+
+            @include mobile {
+                margin-left: 20px;
+                width: 163%;
+            }
+
+            @include tablet {
+                margin-left: 20px;
+                width: 75%;
+            }
         .counter {
             display: flex;
             flex-direction: column;
@@ -75,14 +119,31 @@
             h1 {
                 font-size: 48px;
                 color: #fff;
+                margin-bottom: 1rem;
+
+                @include mobile {
+                    font-size: 35px;
+                }
             }
 
             p {
               font-size: 17px;
               margin-top: -20px;
               color: #fff;
+              @include mobile {
+                font-size: 15px;
+            }
             }
         }
     }
+    }
+    .comp{ 
+        @include mobile {
+            display: none;
+        }
+
+        @include tablet {
+            display: none;
+        }
     }
 }

@@ -1,7 +1,6 @@
-
 import { useRef } from 'react';
 import './about.scss';
-import { motion, useInView } from "framer-motion"; 
+import { motion, useInView } from "framer-motion";
 
 const textVariants = {
   initial: {
@@ -50,7 +49,7 @@ const About = () => {
         animate={isInView ? "animate" : "initial" }
       className='about-sections'> 
          <div className='about-left'>
-            <img src='/cartoon.jpg' />
+            <img src='/ME.JPG' />
          </div>
          <motion.div
            variants={listVariants}

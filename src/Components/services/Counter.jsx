@@ -13,7 +13,7 @@ const Counter = ({from, to, text}) => {
       duration: 4,
       ease: "easeOut",
       onUpdate: (prev) => {
-        setCount(Math.floor(prev));
+      setCount(Math.floor(prev));
       },
     });
 

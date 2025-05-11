@@ -4,7 +4,6 @@ import Counter from "./Counter";
 import "./services.scss";
 import { motion, useInView } from "framer-motion"; 
 
-
 const textVariants = {
     initial: {
         x: -100,
@@ -90,7 +89,7 @@ const Services = () => {
             ))}
         </motion.div>
         <div className="counterList">
-           <Counter from={0} to={104} text="Projects Completed"/>
+           <Counter from={0} to={62} text="Projects Completed"/>
            <Counter from={0} to={22} text="Happy Clients"/>
         </div>
       </div>

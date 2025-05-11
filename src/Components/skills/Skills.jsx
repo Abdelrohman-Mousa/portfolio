@@ -131,13 +131,21 @@ const Skills = () => {
          />
 
         <SkillsCard 
-           img="./problem-solving.png"
-           name="ProblemSolving"  
+           img="./c++.png"
+           name="C++"  
+         />
+         <SkillsCard 
+           img="./oop.png"
+           name="OOP"  
          />
 
          <SkillsCard 
            img="./github.png"
            name="Git & GitHub"  
+         />
+         <SkillsCard 
+           img="./clean-code.png"
+           name="clean Code"  
          />
 
          <SkillsCard 

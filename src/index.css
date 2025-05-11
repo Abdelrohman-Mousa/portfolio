@@ -1,3 +1,23 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  /* overflow-x: hidden; */
+  background-color: var(--primary-color); /* إن وجد */
+}
+
+
+
 :root {
     --primary-color: #1A172D;    /*لون الخلفية الاساسي*/
     --text-color: #ffffff;       /*لون الخط الاساسي*/
